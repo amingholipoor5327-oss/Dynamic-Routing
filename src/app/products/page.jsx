@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ProductData } from "../data";
-import styles from "./products.module.css"; // ایمپورت CSS Module
+import styles from "./products.module.css";  
 
 export default function Datalist() {
   let Categories = Object.keys(ProductData);
