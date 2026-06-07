@@ -1,0 +1,127 @@
+body{
+    margin:0px;
+}
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.productCard {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  animation: fadeInUp 0.6s ease;
+  text-align: center;
+}
+
+.productName {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.productPrice {
+  font-size: 3rem;
+  color: #e53e3e;
+  margin: 20px 0;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 30px;
+  background: #fef5f5;
+  border-radius: 50px;
+}
+
+.priceLabel {
+  font-size: 1rem;
+  color: #718096;
+  margin-top: 10px;
+}
+
+.backButton {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  transform: translateX(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.errorContainer {
+  -webkit-composes: container;
+  text-align: center;
+}
+
+.errorMessage {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.errorMessage h3 {
+  color: #e53e3e;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.errorLink {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #4299e1;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.errorLink:hover {
+  background: #3182ce;
+}
+
+ @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ @media (max-width: 768px) {
+  .productCard {
+    padding: 30px 20px;
+  }
+  
+  .productName {
+    font-size: 1.8rem;
+  }
+  
+  .productPrice {
+    font-size: 2rem;
+  }
+}
